@@ -7,5 +7,6 @@ Salvando el Paramo is a interactive audiovisual multimedia system made for the "
 Download or clone the project.
 
 Once you are in the project file, open the index.html 
+
 That is it. 
 
