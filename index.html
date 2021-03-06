@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <!-- <meta name="viewport" content="minimum-scale=1"> -->
+
+
+
+    <title>Salvando El Paramo</title>
+</head>
+
+<body>
+
+    <div class="o-container-main">
+
+        <div class="player-container">
+
+            <!-- ----------------------videos primera escena------------------------------- -->
+
+            <div class="player " id="playerid">
+                <video id="fantasy-video1" class="video-js vjs-theme-fantasy o-video1 " controls preload="auto"
+                    poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Inicio_1.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid1">
+                <video id="fantasy-video2" class="video-js vjs-theme-fantasy o-video2" controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta1-1.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid2">
+                <video id="fantasy-video3" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta1-2.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+
+            <div class="player" id="playerid3">
+                <video id="fantasy-video4" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Correcta 1 - Decision 2.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <!-- ----------------------videos segunda escena------------------------------- -->
+            <div class="player" id="playerid4">
+                <video id="fantasy-video44" class="video-js vjs-theme-fantasy o-video2" controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta 2-2.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid5">
+                <video id="fantasy-video5" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta 2-1.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid6">
+                <video id="fantasy-video6" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Correcta 2 - Decision 3.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <!-- ----------------------videos tercera escena------------------------------- -->
+            <div class="player" id="playerid7">
+                <video id="fantasy-video7" class="video-js vjs-theme-fantasy" controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta 3-1.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid8">
+                <video id="fantasy-video8" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Incorrecta 3-2.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="player" id="playerid9">
+                <video id="fantasy-video9" class="video-js vjs-theme-fantasy " controls preload="auto"
+                poster="resources/fondo2.jpg" data-setup='{ "fluid": true }'>
+                    <source src="videos3/Final.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+
+        </div>
+
+        <div class="container-inicio" id="id-container-inicio">
+            <div class="info-container">
+
+                <h1 class="o-titulo-paramo"> Salvando el Páramo</h1>
+                <input class="o-input-container" type="text" id="nombre" name="nombreUsuario"
+                    placeholder="Escribe tu nombre">
+                <button class="o-iniciar-button" id="btn-inicio" onclick="Comenzar();">Iniciar</button>
+                <div class="alert alert-danger  o-alerta" role="alert" id="alerta">
+                    ¡No has ingresado tu nombre. Por favor, ingresalo!
+                </div>
+            </div>
+            <img class="o-image-container " src="resources/fondo2.jpg" alt="">
+        </div>
+
+
+        <div class="container-Final" id="id-container-Final">
+
+
+            <div class="info-final-container">
+                <h1 class="o-titulo-paramo o-finaltitulo"> Salvando el Páramo</h1>
+                <div class="todocontianer">
+                    <div class="o-opacity">
+                    </div>
+    
+                    <div class="o-final-points">
+                        <h6 class="o-nombrepersona o-finalnombre" id="id-persona-final">Hola Luisa</h6>
+                        <h5 class="o-font o-obtuviste">Obtuviste</h5>
+
+                        <div class="principal-points.cont">
+                            <div class="points-container">
+                                <h4 class="points-text o-font " id="id-final-points">puntos</h4>
+                            </div>
+
+                        </div>
+                       
+                        <h4 class="o-insignias-text o-font o-finalnombre"> Insignias</h4>
+                        <div class="o-insignias">
+                            <img class="o-icon" src="el.png" alt="icon">
+                            <img class="o-icon" src="sa.png" alt="icon2">
+                            
+                            <img class="o-icon" src="un.jpg" alt="icon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="o-volver"  id="id-volver" onClick="window.location.reload();"> Volver a inicio</button>
+
+                </div>
+            </div>
+            <img class="o-image-container" src="resources/fore.jpg" alt="">
+        </div>
+
+
+
+        <div class="o-firstVideo " id="id-container-firstvideo">
+
+
+            <div class="o-button-container">
+
+                <!-- --------------decisiones primera escena------------ -->
+                <button class="o-option-buttons ob1" id="btn1" onclick="Scene1A()"></button>
+                <button class="o-option-buttons ob1" id="btn2" onclick="Scene1B()"></button>
+                <button class="o-option-buttons ob1" id="btn3" onclick="Scene1C()"></button>
+                <!-- --------------decisiones segunda escena------------ -->
+                <button class="o-option-buttons ob1" id="btn4" onclick="Scene2A()"></button>
+                <button class="o-option-buttons ob1" id="btn5" onclick="Scene2B()"></button>
+                <button class="o-option-buttons ob1" id="btn6" onclick="Scene2C()"></button>
+                <!-- --------------decisiones tercera escena------------ -->
+                <button class="o-option-buttons ob1" id="btn7" onclick="Scene3A()"></button>
+                <button class="o-option-buttons ob1" id="btn8" onclick="Scene3B()"></button>
+                <button class="o-option-buttons ob1" id="btn9" onclick="Scene3C()"></button>
+
+            </div>
+
+
+        </div>
+
+        <div class="o-nombre-container">
+            <h6 class="o-nombrepersona" id="id-persona-name">Hola Luisa</h6>
+            <h6 class="o-nombrepersona" id="id-puntos"> </h6>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <video id="my-video" class="video-js vjs-theme-fantasy" controls preload="auto" width="1500" height=auto
+        poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+        <source src="resources/bunny.mp4" type="video/mp4" />
+         <source src="MY_VIDEO.webm" type="video/webm" /> -->
+    <!-- <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video> -->
+
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <script src="videos.js"> </script>
+    <link rel="stylesheet" href="fantasy/index.css">
+
+
+
+</body>
+
+</html>
