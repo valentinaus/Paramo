@@ -7,9 +7,6 @@ Salvando el Paramo is a interactive audiovisual multimedia system made for the "
 Download or clone the project.
 
 Once you are inside the project file, open the index.html file
-```bash
-cd ../Quickmart
-```
 
 That is it. 
 
